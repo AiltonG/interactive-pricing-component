@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+
+  <div id="simple">
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sing-up for 30-day trial. No credit card required.</p>
+  </div>
+  <!--------------------------------------------------->
+  <div id="table">
+
+      <div id="top">
+        <p id="item1"><output id="valueview">100</output> pageviews</p>
+        <p id="item2"><strong>$<output id="valuemonth">16</output>.00</strong>/month</p>
+      </div>
+
+      <div id="slider">
+        <input type="range" name="range" id="item3" min="0" max="4">
+      </div>
+
+      <div id="discount">
+        <p>Monthly Billing</p>
+
+        <label>
+          <input type="checkbox" class="chex" onchange="checar()">
+          <div class="slider">
+            <button class="button"></button>
+          </div>
+        </label>
+
+        <p>Yearly Billing <strong>25% discount</strong></p>
+
+      </div>
+
+      <!--------------------------------------------------->
+      <div id="baixo">
+        <ul>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+
+        <input id="button2" type="button" value="Start my trial">
+      </div>
+    
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
